@@ -757,9 +757,15 @@
       rel="stylesheet"
       type="text/css"
     />    
-    <audio autoplay="true" controls id="player" loop>
+    <audio autoplay="true" controls id="myautoload" loop>
       <source src="./music.mp3" type="audio/mpeg" />
     </audio>
+    <script type="text/javascript">
+      var myadido = document.getElementById("myautoload");
+      setTimeout(function() {
+        myadido.play();
+      },500);
+    </script>
     <div class="pyro">
       <!-- Phần nhạc -->
       <!-- <audio src="happy-birthday-music-box.mp3" autoplay loop></audio>  -->    
